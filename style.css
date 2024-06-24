@@ -1,0 +1,66 @@
+/* Base styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+p {
+    text-align: center;
+    margin: 10px 20px;
+}
+
+.styled-image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
+    border: 2px solid #000;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Mobile styles */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.5em;
+        margin: 10px 0;
+    }
+
+    p {
+        font-size: 1em;
+        margin: 5px 10px;
+    }
+
+    .styled-image {
+        margin: 10px auto;
+    }
+}
+
+/* Tablet styles */
+@media (min-width: 601px) and (max-width: 1024px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 1.2em;
+    }
+}
+
+/* Desktop styles */
+@media (min-width: 1025px) {
+    h1 {
+        font-size: 2.5em;
+    }
+
+    p {
+        font-size: 1.5em;
+    }
+}
