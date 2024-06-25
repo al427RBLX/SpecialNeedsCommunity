@@ -45,16 +45,55 @@
             padding: 20px;
             text-align: center;
         }
+        
+        body {
+            font-family: Arial, sans-serif;
+        }
         .footer {
             background-color: #333;
             color: white;
+            padding: 20px 0;
             text-align: center;
-            padding: 10px;
         }
+        .footer .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .footer .container > div {
+            margin: 10px 0;
+        }
+        .footer a {
+            color: #00bfff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        .footer .social-media a {
+            margin: 0 5px;
+        }
+        .footer .social-media a i {
+            font-size: 20px;
+        }
+        .footer .quick-links a {
+            display: block;
+            margin: 5px 0;
+        }
+        @media (min-width: 600px) {
+            .footer .container {
+                flex-direction: row;
+                justify-content: space-around;
+            }
+            .footer .container > div {
+                margin: 0 20px;
+            }
+        }
+        
     </style>
 </head>
 <body>
-
     <div class="navbar">
         <a href="index.html">Home</a>
         <a href="policies.html">Policies</a>
@@ -74,10 +113,19 @@
         <p>Inspired by past social movements, the Special Needs Community began in 2020 when a few community members decided to organize and make an impact. Pretty quickly, this singular moment evolved into a full-fledged movement. Our Community Action Group challenges the status quo, holding our leaders accountable and fighting for solutions that will transform society. </p>
     </div>
 
-    <div class="footer">
-        <img src="SNC.png" alt="Special Needs Community">
-        <p>&copy; 2024 Special Needs Community. All rights reserved.</p>
-    </div>
+ <footer class="footer">
+        <div class="container">
+            <div class="contact-info">
+                <h3>Contact Us</h3>
+                <p>Email: specialneedscommunity1@gmail.com</p>
+                <p>Phone: ‪(386) 287-2264‬</p>
+            </div>
+            <div class="social-media">
+                <h3>Follow Us</h3>
+                <a href="https://www.facebook.com/specialneedscommunity1" target="_blank"><i class="fa fa-Facebook"></i></a>
+                <a href="https://x.com/SnNeeds_" target="_blank"><i class="fa fa-X/Twitter"></i></a>
+                <a href="https://www.instagram.com/specialneedscommunity_/" target="_blank"><i class="fa fa-Instagram"></i></a>
+            </div>
 </body>
 </html>
 
