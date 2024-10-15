@@ -1,0 +1,78 @@
+<!-- lock-page.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Special Needs Community</title>
+  <style>
+    /* Style the locked page */
+    #locked-content {
+      display: none;
+    }
+    #form-container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div id="form-container">
+    <form>
+      <input type="password" id="password" placeholder="Enter Password">
+      <button id="submit-btn">Submit</button>
+    </form>
+  </div>
+  <div id="locked-content">
+    <!-- Locked content goes here -->
+    <h1>TP, The Best E-Learning</h1>
+  </div>
+
+  <script>
+    const password = "SNC1520022"; // Set your desired password here
+    const form = document.querySelector("form");
+    const submitBtn = document.querySelector("#submit-btn");
+    const lockedContent = document.querySelector("#locked-content");
+
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      const enteredPassword = document.getElementById("password").value;
+      if (enteredPassword === password) {
+        lockedContent.style.display = "block";
+        form.style.display = "none";
+      } else {
+        alert("Incorrect Password");
+      }
+    });
+  </script>
+</body>
+</html>
+
+<script src="https://specialneedscommunity.statuspage.io/embed/script.js"></script>
+
+<script>
+    (function(d){
+      var s = d.createElement("script");
+      /* uncomment the following line to override default position*/
+      /* s.setAttribute("data-position", 3);*/
+      /* uncomment the following line to override default size (values: small, large)*/
+      /* s.setAttribute("data-size", "small");*/
+      /* uncomment the following line to override default language (e.g., fr, de, es, he, nl, etc.)*/
+      /* s.setAttribute("data-language", "language");*/
+      /* uncomment the following line to override color set via widget (e.g., #053f67)*/
+      /* s.setAttribute("data-color", "#053e67");*/
+      /* uncomment the following line to override type set via widget (1=person, 2=chair, 3=eye, 4=text)*/
+      /* s.setAttribute("data-type", "1");*/
+      /* s.setAttribute("data-statement_text:", "Our Accessibility Statement");*/
+      /* s.setAttribute("data-statement_url", "http://www.example.com/accessibility")";*/
+      /* uncomment the following line to override support on mobile devices*/
+      /* s.setAttribute("data-mobile", true);*/
+      /* uncomment the following line to set custom trigger action for accessibility menu*/
+      /* s.setAttribute("data-trigger", "triggerId")*/
+      s.setAttribute("data-account", "5OQClMwIIv");
+      s.setAttribute("src", "https://cdn.userway.org/widget.js");
+      (d.body || d.head).appendChild(s);
+    })(document)
+    </script>
+    <noscript>Please ensure Javascript is enabled for purposes of <a href="https://userway.org">website accessibility</a></noscript>
