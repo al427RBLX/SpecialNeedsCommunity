@@ -52,10 +52,10 @@
             text-align: center;
             padding: 10px;
         }
-      .locked-content {
+      #locked-content {
       display: none;
     }
-    .form-container {
+    #lform-container {
       position: absolute;
       top: 50%;
       left: 50%;
@@ -81,7 +81,6 @@
     </form>
   </div>
   <div id="locked-content">
-    <!-- Locked content goes here -->
     <h2>Special Needs Community Headquarters</h2>
     <p>Founded 2020</p>
     <p>This Page is Coming Soon.</p>
@@ -93,7 +92,7 @@
     const submitBtn = document.querySelector("#submit-btn");
     const lockedContent = document.querySelector("#locked-content");
 
-    form.addEventListener("submit", (e) => {
+    lform.addEventListener("submit", (e) => {
       e.preventDefault();
       const enteredPassword = document.getElementById("password").value;
       if (enteredPassword === password) {
