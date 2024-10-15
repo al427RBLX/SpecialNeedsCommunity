@@ -1,25 +1,79 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <link rel="icon" href="SNC.png" type="image/png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Special Needs Community</title>
-  <style>
-    #locked-content {
+    <style>
+        body {
+            font-family: Clarkson;
+            margin: 0;
+            padding: 0;
+            color: white;
+            background-color: #313030;
+        }
+        .navbar {
+            background-color: #E8CFB0;
+            overflow: hidden;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .header {
+            padding: 60px;
+            text-align: center;
+            background: #4CAF50;
+            color: white;
+        }
+        .header img {
+            max-width: 150px;
+            margin-bottom: 20px;
+        }
+        .header h1 {
+            font-size: 50px;
+        }
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+        .footer {
+            background-color: #E8CFB0;
+            color: black;
+            text-align: center;
+            padding: 10px;
+        }
+         #locked-content {
       display: none;
     }
-    #lform-container {
+    #form-container {
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
       text-align: center;
-    }
-  </style>
+    </style>
 </head>
 <body>
-<div id="form-container">
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="policies.html">Policies</a>
+        <a href="aboutus.html">About Us</a>
+        <a href="ourmission.html">Our Mission</a>
+        <a href="boardofdirectors.html">Board of Directors</a>
+        <a href="partnerships.html">Partnerships</a>
+    </div>
+
+ <div id="form-container">
     <form>
       <input type="password" id="password" placeholder="Enter Password">
       <button id="submit-btn">Submit</button>
@@ -27,18 +81,18 @@
   </div>
   <div id="locked-content">
     <h2>Special Needs Community Headquarters</h2>
-    <p>Official Headquarters | Founded 2020</p>
+    <p>Offiical Headquarters | Founded 2020</p>
 
     <p>This Page is Coming Soon.</p>
   </div>
 
   <script>
-    const password = "SNC07152002"; // Set your desired password here
+    const password = "SNC1520022"; // Set your desired password here
     const form = document.querySelector("form");
     const submitBtn = document.querySelector("#submit-btn");
     const lockedContent = document.querySelector("#locked-content");
 
-    lform.addEventListener("submit", (e) => {
+    form.addEventListener("submit", (e) => {
       e.preventDefault();
       const enteredPassword = document.getElementById("password").value;
       if (enteredPassword === password) {
