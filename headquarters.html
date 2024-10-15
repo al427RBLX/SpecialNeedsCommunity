@@ -1,13 +1,12 @@
-<!-- lock-page.html -->
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <link rel="icon" href="SNC.png" type="image/png">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Special Needs Community</title>
-  <style>
-     body {
+    <meta charset="UTF-8">
+    <link rel="icon" href="SNC.png" type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Needs Community</title>
+    <style>
+        body {
             font-family: Clarkson;
             margin: 0;
             padding: 0;
@@ -53,7 +52,7 @@
             text-align: center;
             padding: 10px;
         }
-    #locked-content {
+      #locked-content {
       display: none;
     }
     #form-container {
@@ -63,7 +62,7 @@
       transform: translate(-50%, -50%);
       text-align: center;
     }
-  </style>
+    </style>
 </head>
 <body>
     <div class="navbar">
@@ -73,21 +72,23 @@
         <a href="ourmission.html">Our Mission</a>
         <a href="boardofdirectors.html">Board of Directors</a>
         <a href="partnerships.html">Partnerships</a>
-        <a href="headquarters.html">Headquarters</a>
     </div>
-  
-  <div id="form-container">
+
+ <div id="form-container">
     <form>
       <input type="password" id="password" placeholder="Enter Password">
       <button id="submit-btn">Submit</button>
     </form>
   </div>
   <div id="locked-content">
-    <h2>This page is coming soon.</h2>
+    <!-- Locked content goes here -->
+    <h2>Special Needs Community Headquarters</h2>
+    <p>Founded 2020</p>
+    <p>This Page is Coming Soon.</p>
   </div>
 
   <script>
-    const password = "SNC1520022"; // Set your desired password here
+    const password = "SNC071520022"; // Set your desired password here
     const form = document.querySelector("form");
     const submitBtn = document.querySelector("#submit-btn");
     const lockedContent = document.querySelector("#locked-content");
@@ -102,16 +103,14 @@
         alert("Incorrect Password");
       }
     });
-  </script>
-  <div class="footer">
+
+<div class="footer">
         <img src="SNC.png" alt="Special Needs Community">
         <p>&copy; 2024 Special Needs Community. All rights reserved.</p>
         
         <h2>Contact Us</h2>
         <p>Email: specialneedscommunity1@gmail.com</p>
     </div>
-</body>
-</html>
 </body>
 </html>
 
