@@ -5,6 +5,7 @@
     <link rel="icon" href="SNC.png" type="image/png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Special Needs Community</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
     <style>
         body {
             font-family: Clarkson;
@@ -13,38 +14,57 @@
             color: white;
             background-color: #313030;
         }
-        .navbar {
+        nav {
+            width: 100%;
+            height: 60px;
             background-color: #E8CFB0;
-            overflow: hidden;
         }
-        .navbar a {
+
+        nav p {
+            font-family: Clarkson;
+            color: white;
+            font-size: 24px;
+            line-height: 55px;
             float: left;
+            padding: 0px 20px;
+        }
+        nav ul {
+            float: left;
+        }
+
+        nav ul li {
+            float: left;
+            list-style: none;
+            position: relative;
+        }
+        nav ul li a {
             display: block;
-            color: black;
-            text-align: center;
-            padding: 14px 20px;
+            font-family: Clarkson;
+            color: white;
+            font-size: 14px;
+            padding: 22px 14px;
             text-decoration: none;
         }
-        .navbar a:hover {
-            background-color: #ddd;
-            color: black;
+        nav ul li ul {
+            display: none;
+            position: absolute;
+            background-color: white;
+            padding: 10px;
+            border-radius: 0px 0px 4px 4px;
         }
-        .header {
-            padding: 60px;
-            text-align: center;
-            background: #E8CFB0;
-            color: white;
+        nav ul li:hover ul {
+            display: block;
         }
-        .header img {
-            max-width: 150px;
-            margin-bottom: 20px;
+        nav ul li ul li {
+            width: 180px;
+            border-radius: 4px;
         }
-        .header h1 {
-            font-size: 50px;
+        nav ul li ul li a {
+            padding: 8px 14px;
         }
-        .content {
-            padding: 20px;
-            text-align: center;
+
+        nav ul li ul li a:hover {
+            background-color: white;
         }
         .footer {
             background-color: #E8CFB0;
@@ -55,15 +75,22 @@
     </style>
 </head>
 <body>
-    <div class="navbar">
-        <a href="index.html">Home</a>
-        <a href="policies.html">Policies</a>
-        <a href="aboutus.html">About Us</a>
-        <a href="ourmission.html">Our Mission</a>
-        <a href="boardofdirectors.html">Board of Directors</a>
-        <a href="partnerships.html">Partnerships</a>
-        <a href="headquarters.html">Headquarters</a>
-    </div>
+    <nav>
+        <p>Special Needs Community</p>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="policies.html">Policies</a></li>
+            <li><a href="aboutus.html">About Us</a>
+                <ur>
+                    <li><a href="ourmission.html">Our Mission</a></li>
+                    <li><a href="boardofdirectors.html">Board of Directors</a></li>
+                    <li><a href="headquarters.html">Headquarters</a></li>
+
+                </ur>
+            </li>
+            <li><a href="partnerships.html">Partnerships</a></li>
+        </ul>
+    </nav>
 
     <div class="content">
         <h2>Help with Special Needs Community</h2>
@@ -75,7 +102,6 @@
         <p>Who We Are</p>
         <p>Inspired by social movements of the past, Special Needs Community began in 2020 when a few community members decided to organize and make an impact. Pretty quickly, this singular moment evolved into a full-fledged movement. Our Community Action Group challenges the status quo, holding our leaders accountable and fighting for solutions that will transform society.</p>
     </div>
-
 
 <div class="footer">
         <img src="SNC.png" alt="Special Needs Community">
