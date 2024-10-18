@@ -1,5 +1,59 @@
-@media only screen and (max-width: 600px) {
+/* Default font-family setup */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, 
+               Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* Optional: Adjust for mobile-specific readability */
+@media (max-width: 768px) {
   body {
-    font-size: 16px;
+      font-size: 16px;
   }
+}
+
+/* Mobile Styles: Target devices with screen width up to 480px */
+@media (max-width: 480px) {
+  body {
+      font-size: 14px;
+      padding: 10px;
+  }
+
+  h1 {
+      font-size: 24px;
+  }
+
+  p {
+      font-size: 16px;
+  }
+}
+
+/* Mobile Styles: Target devices with screen width up to 480px */
+@media (max-width: 480px) {
+  body {
+      font-size: 14px;
+      padding: 10px;
+  }
+
+  h1 {
+      font-size: 24px;
+  }
+
+  p {
+      font-size: 16px;
+  }
+}
+
+body {
+  font-size: clamp(14px, 2vw, 18px); /* Scales between 14px and 18px */
+}
+
+body {
+  font-family: 
+      -apple-system, /* iOS */
+      "Segoe UI", /* Windows */
+      Roboto, /* Android */
+      sans-serif; /* Fallback */
 }
