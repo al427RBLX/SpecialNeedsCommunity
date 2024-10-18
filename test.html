@@ -3,30 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Responsive Dropdown Menu</title>
+  <title>Dropdown Menu Example</title>
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <nav class="navbar">
-    <div class="logo">My Website</div>
-    <div class="menu-toggle" id="mobile-menu">&#9776;</div> <!-- Hamburger Icon -->
-    <ul class="nav-links" id="nav-links">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li class="dropdown">
-        <a href="#">Services ▼</a>
-        <ul class="dropdown-menu">
-          <li><a href="#">Web Design</a></li>
-          <li><a href="#">SEO</a></li>
-          <li><a href="#">Marketing</a></li>
-        </ul>
-      </li>
-      <li><a href="#">Contact</a></li>
-    </ul>
-  </nav>
+  <h2>Select Your Favorite Fruit</h2>
 
-  <script src="script.js"></script> 
+  <label for="fruits">Choose a fruit:</label>
+  <select id="fruits" name="fruits">
+    <option value="apple">Apple</option>
+    <option value="banana">Banana</option>
+    <option value="cherry">Cherry</option>
+    <option value="date">Date</option>
+  </select>
 </body>
 </html>
 
