@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="icon" href="SNC.png" type="image/png">
+    <link rel="icon" href="img/SNC.png" type="image/png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Special Needs Community</title>
     <link rel="stylesheet" type="text/css" href="style.css">
@@ -14,56 +14,6 @@
             padding: 0;
             background-color: #313030;
         }
-        nav {
-            width: 100%;
-            height: 60px;
-            background-color: #E8CFB0;
-        }
-        nav p {
-            font-family: Clarkson;
-            color: black;
-            font-size: 24px;
-            line-height: 55px;
-            float: left;
-            padding: 0px 20px;
-        }
-        nav ul {
-            float: left;
-        }
-        nav ul li {
-            float: left;
-            list-style: none;
-            position: relative;
-        }
-        nav ul li a {
-            display: block;
-            font-family: Clarkson;
-            color: black;
-            font-size: 14px;
-            padding: 22px 14px;
-            text-decoration: none;
-        }
-        nav ul li ul {
-            display: none;
-            position: absolute;
-            background-color: #E8CFB0;
-            padding: 10px;
-            border-radius: 0px 0px 4px 4px;
-        }
-        nav ul li:hover ul {
-            display: block;
-        }
-        nav ul li ul li {
-            width: 180px;
-            border-radius: 4px;
-        }
-        nav ul li ul li a {
-            padding: 8px 14px;
-        }
-
-        nav ul li ul li a:hover {
-            background-color: white;
-        }
         .footer {
             background-color: #E8CFB0;
             color: black;
@@ -73,8 +23,11 @@
     </style>
 </head>
 <body>
+<header class="header-menu">
     <nav>
-        <p>Special Needs Community</p>
+        <a href="index.html" class="logo">
+            <img src="img/SNC.png" alt="specialneedscommunity">
+        </a>
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="policies.html">Policies</a></li>
@@ -88,6 +41,13 @@
             <li><a href="partnerships.html">Partnerships</a></li>
         </ul>
     </nav>
+    <div class="sm">
+        <form action="" method="post">
+            <input type="text" name="search" placeholder="Search...">
+            <button type="submit">Search</button>
+        </form>
+    </div>
+</header>
 
     <div class="content">
         <h2>Help with Special Needs Community</h2>
@@ -102,7 +62,7 @@
 
 
 <div class="footer">
-        <img src="SNC.png" alt="Special Needs Community">
+        <img src="img/SNC.png" alt="Special Needs Community">
         <p>&copy; 2024 Special Needs Community. All rights reserved.</p>
         
         <h2>Contact Us</h2>
