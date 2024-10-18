@@ -78,7 +78,7 @@
   white-space: nowrap;
 }
 
-ul li:hover>ul {
+.header-menu ul li:hover>ul {
   visibility: visible;
   opacity: 1;
   display: block;
@@ -118,3 +118,4 @@ ul li:hover>ul {
   width: fit-content;
   padding: 0 5px 0 10px;
 }
+
