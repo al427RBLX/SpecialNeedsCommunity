@@ -58,7 +58,7 @@
   transition: all ease-in-out 100ms;
 }
 
-.header-menu ul li a:hover {
+ul li a:hover>ul {
   background-color: black
   color #E8CFB0;
 }
