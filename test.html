@@ -3,12 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Interactive Dropdown Menu</title>
+  <title>Dropdown Menu Example</title>
   <style>
-    /* Basic styling for the navbar */
+    /* Navbar styling */
     .navbar {
       background-color: #333;
       overflow: hidden;
+      padding: 10px;
     }
 
     /* Navbar links */
@@ -21,13 +22,17 @@
       font-size: 17px;
     }
 
+    .navbar a:hover {
+      background-color: #575757;
+    }
+
     /* Dropdown container */
     .dropdown {
       float: left;
       overflow: hidden;
     }
 
-    /* Dropdown button */
+    /* Dropdown button styling */
     .dropdown .dropbtn {
       cursor: pointer;
       font-size: 17px;
@@ -37,6 +42,10 @@
       padding: 14px 16px;
       background-color: inherit;
       margin: 0;
+    }
+
+    .navbar a, .dropdown .dropbtn {
+      font-family: Arial, sans-serif;
     }
 
     /* Dropdown content (hidden by default) */
@@ -59,7 +68,7 @@
       text-align: left;
     }
 
-    /* Change color on hover */
+    /* Change background on hover */
     .dropdown-content a:hover {
       background-color: #ddd;
     }
@@ -75,40 +84,19 @@
   <div class="navbar">
     <a href="#home">Home</a>
     <div class="dropdown">
-      <button class="dropbtn">Menu 
-        ▼
-      </button>
+      <button class="dropbtn">Services ▼</button>
       <div class="dropdown-content">
-        <a href="#link1">Link 1</a>
-        <a href="#link2">Link 2</a>
-        <a href="#link3">Link 3</a>
+        <a href="#design">Web Design</a>
+        <a href="#development">Development</a>
+        <a href="#seo">SEO</a>
       </div>
     </div> 
+    <a href="#contact">Contact</a>
     <a href="#about">About</a>
   </div>
 
-  <script>
-    // Optional: Example JavaScript to handle dropdown visibility with a click event
-    document.querySelector('.dropbtn').addEventListener('click', function() {
-      const dropdownContent = this.nextElementSibling;
-      dropdownContent.style.display = 
-        dropdownContent.style.display === 'block' ? 'none' : 'block';
-    });
-
-    // Close dropdown if clicked outside
-    window.onclick = function(event) {
-      if (!event.target.matches('.dropbtn')) {
-        const dropdowns = document.getElementsByClassName('dropdown-content');
-        for (let i = 0; i < dropdowns.length; i++) {
-          dropdowns[i].style.display = 'none';
-        }
-      }
-    };
-  </script>
-
 </body>
 </html>
-
 
 <script src="https://specialneedscommunity.statuspage.io/embed/script.js"></script>
 
