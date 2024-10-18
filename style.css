@@ -1,59 +1,91 @@
-/* Default font-family setup */
-body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, 
-               Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+/* General Reset */
+* {
   margin: 0;
   padding: 0;
-  line-height: 1.6;
+  box-sizing: border-box;
+  font-family: Clarkson;
 }
 
-/* Optional: Adjust for mobile-specific readability */
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 15px 20px;
+}
+
+.logo {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: block;
+}
+
+/* Dropdown Styles */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #E8CFB0;
+  list-style: none;
+  min-width: 150px;
+}
+
+.dropdown-menu a {
+  color: white;
+  padding: 10px;
+  display: block;
+  text-align: left;
+}
+
+/* Display dropdown on hover for desktop */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Hamburger Icon for Mobile */
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+}
+
+/* Responsive Styles */
 @media (max-width: 768px) {
-  body {
-      font-size: 16px;
-  }
-}
-
-/* Mobile Styles: Target devices with screen width up to 480px */
-@media (max-width: 480px) {
-  body {
-      font-size: 14px;
-      padding: 10px;
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #E8CFB0;
   }
 
-  h1 {
-      font-size: 24px;
+  .nav-links.active {
+    display: flex;
   }
 
-  p {
-      font-size: 16px;
-  }
-}
-
-/* Mobile Styles: Target devices with screen width up to 480px */
-@media (max-width: 480px) {
-  body {
-      font-size: 14px;
-      padding: 10px;
+  .dropdown-menu {
+    position: static;
   }
 
-  h1 {
-      font-size: 24px;
+  .menu-toggle {
+    display: block;
   }
-
-  p {
-      font-size: 16px;
-  }
-}
-
-body {
-  font-size: clamp(14px, 2vw, 18px); /* Scales between 14px and 18px */
-}
-
-body {
-  font-family: 
-      -apple-system, /* iOS */
-      "Segoe UI", /* Windows */
-      Roboto, /* Android */
-      sans-serif; /* Fallback */
 }
