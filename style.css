@@ -12,6 +12,7 @@
   font-family: RobotoBold;
   src: url(fonts/Roboto-Bold.ttf);
 }
+
 :root {
   --menu-count 4;
 }
@@ -49,6 +50,10 @@
   list-style: none;
   display: flex;
   align-self: center;
+}
+
+.header-main ul li {
+  position: relative;
 }
 
 .header-main ul li a {
