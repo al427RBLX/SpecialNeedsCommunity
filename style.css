@@ -16,11 +16,6 @@
   --menu-count 4;
 }
 
-body {
-  background-color: #313030;
-  color: white;
-}
-
 .header-main {
   width: 100%;
   padding: 0 60px;
