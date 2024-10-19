@@ -5,8 +5,8 @@
     <link rel="icon" href="img/SNC.png" type="image/png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Special Needs Community</title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
     <style>
         body {
             font-family: Clarkson;
@@ -15,39 +15,37 @@
             color: white;
             background-color: #313030;
         }
-        .header-mian {
+        .header-main {
             width: 100%;
             padding: 0 60px;
             height: 60px;
             background-color: #E8CFB0;
+            display: flex;
             justify-content: space-between;
             position: fixed;
             top: 0;
             z-index: 100;
         }
-        .header-mian  nav {
+        .header-main nav {
             display: flex;
-        } 
-        .header-mian .logo {
+        }
+        .header-main .logo {
             height: 40px;
             width: fit-content;
             align-self: center;
             cursor: pointer;
         }
-        .header-mian .logo img {
+        .header-main .logo img {
             height: 100%;
         }
-        .header-mian ul {
+        .header-main ul {
             height: 100%;
             padding-left: 40px;
             list-style: none;
             display: flex;
             align-self: center;
         }
-        .header-mian ul li {
-            position: relative;
-        }
-        .header-mian ul li a {
+        .header-main ul li a {
             display: block;
             padding: 0 10px;
             height: 100%;
@@ -60,12 +58,12 @@
             cursor: pointer;
             transition: all ease-in-out 100ms;
         }
-        .header-mian ul li a:hover {
-            background-color: #E8CFB0;
-            color: black;
+        .header-main ul li a:hover {
+            background-color: black;
+            color: white;
         }
         /* DROPDOWN STYLING STARTED */
-        .header-mian ul li ul {
+        .header-main ul li ul {
             visibility: hidden;
             opacity: 0;
             display: none;
@@ -73,7 +71,7 @@
             left: -40px;
             transition: all ease-in-out 100ms;
         }
-        .header-mian ul li ul li a {
+        .header-main ul li ul li a {
             white-space: nowrap;
         }
         ul li:hover>ul {
@@ -82,11 +80,11 @@
             display: block;
         }
         /* DROPDOWN STYLING ENDED */
-        .header-mian .sm {
+        .header-main .sm {
             align-self: center;
             display: flex;
         }
-        .header-mian form {
+        .header-main form {
             height: 40px;
             padding-right: 5px;
             display: flex;
@@ -95,7 +93,7 @@
             width: fit-content;
             align-self: center;
         }
-        .header-mian form input {
+        .header-main form input {
             height: 100%;
             width: 300px;
             padding: 0 10px 0 20px;
@@ -103,10 +101,10 @@
             font-size: 1rem;
             font-family: Clarkson;
         }
-        .header-mian form input:focus {
+        .header-main form input:focus {
             border: 1px solid black;
         }
-        .header-mian form button {
+        .header-main form button {
             width: fit-content;
             padding: 0 5px 0 10px;
         }
