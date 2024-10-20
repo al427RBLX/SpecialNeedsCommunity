@@ -13,18 +13,17 @@
     src: url(fonts/Roboto-Bold.ttf);
 }
 
+/* Get the number of menu items, for the mobile menu */
 :root {
     --menu-count: 4;
 }
 
-body {
-    background-color: #313030;
-}
-
+/* Hide burger menu on desktop */
 .mobile-menu-btn {
     display: none;
 }
 
+/* Desktop header */
 .header-main {
     width: 100%;
     padding: 0 60px;
@@ -37,10 +36,12 @@ body {
     z-index: 100;
 }
 
+/* Setting the nav as flex */
 .header-main nav {
     display: flex;
 }
 
+/* Styling the logo img container, and positioning it inside the flex */
 .header-main .logo {
     height: 40px;
     width: fit-content;
@@ -48,12 +49,14 @@ body {
     cursor: pointer;
 }
 
+/* Styling the logo img */
 .header-main .logo img {
     height: 100%;
     align-self: center;
     cursor: pointer;
 }
 
+/* Styling and applying flex to the menu ul */
 .header-main ul {
     height: 100%;
     padding-left: 40px;
@@ -62,6 +65,7 @@ body {
     align-self: center;
 }
 
+/* Styling the menu item texts */
 .header-main ul li a {
     display: block;
     padding: 0 10px;
@@ -76,16 +80,21 @@ body {
     transition: all ease-in-out 100ms;
 }
 
+/* Applying a hover effect to the menu text */
 .header-main ul li a:hover {
     background-color: #2a2a2a;
     color: #fff;
 }
 
+/* DROP DOWN STARTED */
+
+/* Applying a position "relative", to allow menu items to be set to "absolute", and placed correctly under the header */
 .header-main ul li {
     position: relative;
     transition-duration: 100ms;
 }
 
+/* Hiding the dropdown on page load, and applying position absolute, and adjusting it's position */
 .header-main ul li ul {
     visibility: hidden;
     opacity: 0;
@@ -95,31 +104,38 @@ body {
     transition: all ease-in-out 100ms;
 }
 
+/* Prevent wrapping of the drop down text */
 .header-main ul li ul li a {
     white-space: nowrap;
 }
 
+/* Showing the dropdown on hover */
 ul li:hover>ul {
     visibility: visible;
     opacity: 1;
     display: block;
 }
 
+/* DROP DOWN ENDED */
+
+/* Styling and applying flex to the header social media container */
 .header-main .sm {
     align-self: center;
     display: flex;
 }
 
+/* Styling the search field form */
 .header-main form {
     height: 40px;
     padding-right: 5px;
     display: flex;
-    border: 1px solid #E8CFB0;
+    border: 1px solid #aeaeae;
     border-radius: 20px 100px 100px 20px;
     width: fit-content;
     align-self: center;
 }
 
+/* Styling the form input */
 .header-main form input {
     height: 100%;
     width: 300px;
@@ -129,15 +145,18 @@ ul li:hover>ul {
     font-family: Roboto;
 }
 
+/* Styling the form input when focused (clicked) */
 .header-main form input:focus {
     border: 1px solid #111;
 }
 
+/* Styling the form button */
 .header-main form button {
     width: fit-content;
     padding: 0 5px 0 10px;
 }
 
+/* Styling the form button icon */
 .header-main form button img {
     height: 24px;
     padding-top: 15%;
@@ -146,10 +165,12 @@ ul li:hover>ul {
 
 @media only screen and (max-width: 600px) {
 
+    /* Hide the header on page load */
     .header-main {
         display: none;
     }
 
+    /* Show the mobile menu toggle btn, and placing it in the corner */
     .mobile-menu-btn {
         display: flex;
         justify-content: center;
@@ -162,11 +183,13 @@ ul li:hover>ul {
         background-color: #E8CFB0;
     }
 
+    /* Style btn image */
     .mobile-menu-btn img {
         height: 80%;
         align-self: center;
     }
 
+    /* Mobile styling and changing flex properties. The "display flex" will be applied using JavaScript, once we click the menu btn */
     .header-main {
         height: 100vh;
         flex-wrap: wrap;
@@ -175,6 +198,7 @@ ul li:hover>ul {
         justify-content: flex-start;
     }
 
+    /* Mobile styling and changing the flex properties */
     .header-main nav {
         width: 100%;
         height: 80vh;
@@ -183,6 +207,7 @@ ul li:hover>ul {
         align-content: stretch;
     }
 
+    /* Mobile styling and applying flex to the logo container, in order to position the image correctly */
     .header-main .logo {
         height: 30%;
         padding: 0;
@@ -191,12 +216,14 @@ ul li:hover>ul {
         align-items: center;
     }
 
+    /* Mobile styling of the logo image */
     .header-main .logo img {
         height: 60%;
         align-self: center;
         cursor: pointer;
     }
 
+    /* Mobile styling and changing the flex properties of the menu ul */
     .header-main ul {
         height: 70%;
         width: 100%;
@@ -207,12 +234,15 @@ ul li:hover>ul {
         align-content: space-between;
     }
 
+    /* Mobile styling and applying flex to the menu list items */
     .header-main ul li {
         width: 100%;
         height: calc(100% / var(--menu-count));
         padding: 0;
         margin: 0;
+        /* Giving all menu items a border on top */
         border-top: 1px solid #E8CFB0;
+        /* We set a flex here, with nowrap and column, to make the dropdown go bellow the Gallery, and justify-content instead since we are using column, to center the text */
         display: flex;
         flex-wrap: nowrap;
         flex-direction: column;
@@ -220,10 +250,12 @@ ul li:hover>ul {
         transition: all ease-in-out 100ms;
     }
 
+    /* Giving the last menu item a border bellow */
     .header-main ul li:nth-last-child(1) {
         border-bottom: 1px solid #E8CFB0;
     }
 
+    /* Mobile styling of the menu text */
     .header-main ul li a {
         width: 100%;
         height: fit-content;
@@ -238,11 +270,15 @@ ul li:hover>ul {
         color: #111;
     }
 
+    /* DROP DOWN STARTED */
+
+    /* Allowing the dropdown to scroll, in case we have a big dropdown */
     .header-main nav {
         overflow-y: scroll;
         overflow-x: hidden;
     }
 
+    /* Hide the dropdown completely. We don't wanna show the dropdown, until we :focus, otherwise we can scroll before clicking the dropdown */
     .header-main ul li ul {
         display: none;
         flex-wrap: nowrap;
@@ -253,22 +289,26 @@ ul li:hover>ul {
         left: 0;
     }
 
+    /* Mobile styling of the dropdown menu list items */
     .header-main ul li ul li {
         height: fit-content;
         display: block;
         background-color: #111;
     }
 
+    /* Mobile styling of the dropdown menu text, to differentiate it from the regular menu */
     .header-main ul li ul li a {
         background-color: #111;
         color: #fff;
     }
 
+    /* Mobile styling of the dropdown menu text when hovered, to unset any hover styling from the desktop version */
     .header-main ul li ul li a:hover {
         background-color: #111;
         color: #fff;
     }
 
+    /* Now we show the dropdown, and allow scrolling when the dropdown is clicked */
     .header-main ul li:focus>ul,
     .header-main ul li:hover>ul {
         display: flex;
@@ -276,6 +316,9 @@ ul li:hover>ul {
         opacity: 1;
     }
 
+    /* DROP DOWN ENDED */
+
+    /* Mobile styling and changing flex properties of the social media container */
     .header-main .sm {
         width: 100%;
         height: 20vh;
@@ -285,12 +328,14 @@ ul li:hover>ul {
         flex-direction: column;
     }
 
+    /* Mobile styling of the search field form */
     .header-main form {
         padding-right: 0;
         width: 90%;
         height: 40%;
     }
 
+    /* Mobile styling of the form input */
     .header-main form input {
         width: 100%;
         height: 100%;
@@ -298,10 +343,12 @@ ul li:hover>ul {
         font-size: 1.6rem;
     }
 
+    /* Mobile styling of the form button */
     .header-main form button {
         padding: 0 5%;
     }
 
+    /* Mobile styling of the form button image */
     .header-main form button img {
         height: 5vh;
         padding-top: 15%;
