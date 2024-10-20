@@ -144,7 +144,6 @@ ul li:hover>ul {
     cursor: pointer;
 }
 
-
 @media only screen and (max-width: 600px) {
 
     .header-main {
@@ -160,7 +159,7 @@ ul li:hover>ul {
         top: 0;
         right: 0;
         z-index: 200;
-        background-color: #fff;
+        background-color: #E8CFB0;
     }
 
     .mobile-menu-btn img {
