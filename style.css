@@ -150,7 +150,6 @@ ul li:hover>ul {
 }
 
 @media only screen and (max-width: 600px) {
-
 .header-main {
   display: none;
 }
@@ -310,5 +309,4 @@ ul li:hover>ul {
   height: 5vh;
   padding-top: 15%;
 }
-
 }
