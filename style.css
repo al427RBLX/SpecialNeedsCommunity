@@ -91,7 +91,7 @@ body {
     color: #fff;
 }
 
-/* DROP DOWN START */
+/* DROP DOWN STARTED */
 
 /* Applying a position "relative", to allow menu items to be set to "absolute", and placed correctly under the header */
 .header-main ul li {
@@ -121,7 +121,7 @@ ul li:hover>ul {
     display: block;
 }
 
-/* DROP DOWN END */
+/* DROP DOWN ENDED */
 
 /* Styling and applying flex to the header social media container */
 .header-main .sm {
@@ -259,7 +259,7 @@ ul li:hover>ul {
 
     /* Giving the last menu item a border bellow */
     .header-main ul li:nth-last-child(1) {
-        border-bottom: 1px solid #ddd;
+        border-bottom: 1px solid #E8CFB0;
     }
 
     /* Mobile styling of the menu text */
