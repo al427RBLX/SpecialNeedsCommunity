@@ -33,7 +33,7 @@ body {
     width: 100%;
     padding: 0 60px;
     height: 60px;
-    background-color: #ffffff;
+    background-color: #E8CFB0;
     display: flex;
     justify-content: space-between;
     position: fixed;
@@ -78,8 +78,8 @@ body {
     line-height: 60px;
     font-size: 1rem;
     font-family: RobotoMedium;
-    color: #000000;
-    background-color: #fff;
+    color: black;
+    background-color: #E8CFB0;
     text-transform: uppercase;
     cursor: pointer;
     transition: all ease-in-out 100ms;
@@ -134,7 +134,7 @@ ul li:hover>ul {
     height: 40px;
     padding-right: 5px;
     display: flex;
-    border: 1px solid #aeaeae;
+    border: 1px solid black;
     border-radius: 20px 100px 100px 20px;
     width: fit-content;
     align-self: center;
@@ -152,7 +152,7 @@ ul li:hover>ul {
 
 /* Styling the form input when focused (clicked) */
 .header-main form input:focus {
-    border: 1px solid #111;
+    border: 1px solid black;
 }
 
 /* Styling the form button */
@@ -187,7 +187,7 @@ ul li:hover>ul {
         top: 0;
         right: 0;
         z-index: 200;
-        background-color: #fff;
+        background-color: #E8CFB0;
     }
 
     /* Style btn image */
@@ -248,7 +248,7 @@ ul li:hover>ul {
         padding: 0;
         margin: 0;
         /* Giving all menu items a border on top */
-        border-top: 1px solid #ddd;
+        border-top: 1px solid #E8CFB0;
         /* We set a flex here, with nowrap and column, to make the dropdown go bellow the Gallery, and justify-content instead since we are using column, to center the text */
         display: flex;
         flex-wrap: nowrap;
