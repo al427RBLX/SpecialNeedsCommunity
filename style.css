@@ -18,15 +18,6 @@
     --menu-count: 4;
 }
 
-body {
-    font-family: Clarkson;
-    margin: 0;
-    padding: 0;
-    color: white;
-    background-color: #313030;
-    text-align: center;
-}
-
 /* Hide burger menu on desktop */
 .mobile-menu-btn {
     display: none;
