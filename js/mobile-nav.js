@@ -4,12 +4,12 @@ let headerMobileBtn  = document.querySelector(".mobile-menu-btn");
 let isMenuOpen = false;
 
 headerMobileBtn,onclick = function() {
-    if (! isMenuOpen) {
-        headerMain.style.display = "flex"
+    if (!isMenuOpen) {
+        headerMain.style.display = "flex";
         sMenuOpen = true;
     }
-    if else (isMenuOpen) {
-        headerMain.style.display = "none"
+     else if (isMenuOpen) {
+        headerMain.style.display = "none";
         sMenuOpen = false;
     }
 }
