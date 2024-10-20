@@ -15,12 +15,12 @@
 
 /* Get the number of menu items, for the mobile menu */
 :root {
-    --menu-count: 5;
+    --menu-count: 4;
 }
 
 /* Website background placeholder */
 body {
-    background-color: #111;
+    background-color: #303031;
 }
 
 /* Hide burger menu on desktop */
@@ -33,7 +33,7 @@ body {
     width: 100%;
     padding: 0 60px;
     height: 60px;
-    background-color: #ffffff;
+    background-color: #E8CFB0;
     display: flex;
     justify-content: space-between;
     position: fixed;
@@ -79,7 +79,7 @@ body {
     font-size: 1rem;
     font-family: RobotoMedium;
     color: #000000;
-    background-color: #fff;
+    background-color: #E8CFB0;
     text-transform: uppercase;
     cursor: pointer;
     transition: all ease-in-out 100ms;
@@ -87,7 +87,7 @@ body {
 
 /* Applying a hover effect to the menu text */
 .header-main ul li a:hover {
-    background-color: #2a2a2a;
+    background-color: black;
     color: #fff;
 }
 
@@ -209,7 +209,7 @@ ul li:hover>ul {
         top: 0;
         right: 0;
         z-index: 200;
-        background-color: #fff;
+        background-color: #E8CFB0;
     }
 
     /* Style btn image */
