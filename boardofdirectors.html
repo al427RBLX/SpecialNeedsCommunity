@@ -5,23 +5,37 @@
     <link rel="icon" href="img/SNC.png" type="image/png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Special Needs Community</title>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Clarkson;
+            margin: 0;
+            padding: 0;
+            color: white;
+            background-color: #313030;
+        }
+        .footer {
+            background-color: #E8CFB0;
+            color: black;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
 </head>
 <body>
     <div class="mobile-menu-btn">
         <img src="img/menu.png" alt="mobile-menu-btn">
     </div>
-
-    <header class="header-main">
+    <header class="header-main">>
         <nav>
             <a href="index.html" class="logo">
-                <img src="img/SNC.png" alt="Special Needs Community">
+                <img src="img/SNC.png" alt="website logo">
             </a>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="policies.html">Policies</a></li>
-                <li><a href="aboutus.html">About Us</a>
+                <li class="dropdown"><a href="aboutus.html">About Us</a>
                     <ul>
                         <li><a href="ourmission.html">Our Mission</a></li>
                         <li><a href="boardofdirectors.html">Board of Directors</a></li>
@@ -33,8 +47,8 @@
         </nav>
         <div class="sm">
             <form action="" method="post">
-                <input type="text" name="Search " placeholder="Search...">
-                <button type="submit"><img src="img/searchsymbol.png" alt="search button"></button>
+                <input type="text" name="search" placeholder="Search...">
+                <button type="submit"><img src="img/searchsymbol.png" alt="search"></button>
             </form>
         </div>
     </header>
@@ -45,29 +59,24 @@
         <p>• Founder of Special Needs Community</p>
     </div>
 
-       <div class="content">
+    <div class="content">
         <img src="img/SNC.png" alt="Special Needs Community">
         <h2>Kelly Seletos</h2>
         <p>• Board of Director of Special Needs Community</p>
     </div>
 
-      <div class="content">
+    <div class="content">
         <img src="img/SNC.png" alt="Special Needs Community">
         <h2>Anthony Allen</h2>
         <p>• Board of Director of Special Needs Community</p>
     </div>
 
-    <div class="content">
+    <div class="footer">
         <img src="img/SNC.png" alt="Special Needs Community">
         <p>&copy; 2024 Special Needs Community. All rights reserved.</p>
-        
-        <h2>Contact Us</h2>
-        <p>Email: specialneedscommunity1@gmail.com</p>
-    </div>
+</div>
 </body>
-
 <script src="js/mobile-nav.js"></script>
-
 </html>
 
 <script src="https://specialneedscommunity.statuspage.io/embed/script.js"></script>
