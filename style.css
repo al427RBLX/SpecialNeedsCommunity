@@ -293,7 +293,7 @@ ul li:hover>ul {
     .header-main ul li ul li {
         height: fit-content;
         display: block;
-        background-color: #111;
+        background-color: #E8CFB0;
     }
 
     /* Mobile styling of the dropdown menu text, to differentiate it from the regular menu */
