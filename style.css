@@ -14,11 +14,7 @@
 }
 
 :root {
-    --menu-count 4;
-}
-
-body {
-    background-color: #303031;
+    --menu-count: 4;
 }
 
 .header-main {
