@@ -312,18 +312,4 @@ ul li:hover>ul {
         height: 5vh;
         padding-top: 15%;
     }
-
-    .header-main .sm-links {
-        height: 50%;
-        width: 100%;
-        margin: 0;
-        padding: 0;
-        justify-content: center;
-    }
-
-    .header-main .sm-links a {
-        height: 60%;
-        margin: 0 2%;
-        padding: 0;
-    }
 }
