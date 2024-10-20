@@ -168,28 +168,6 @@ ul li:hover>ul {
     cursor: pointer;
 }
 
-/* Styling and applying flex to the social media links container */
-.header-main .sm-links {
-    height: 60px;
-    width: fit-content;
-    display: flex;
-    align-items: center;
-}
-
-/* Styling the social media links */
-.header-main .sm-links a {
-    display: block;
-    height: 30px;
-    margin-left: 10px;
-    cursor: pointer;
-    align-self: center;
-}
-
-/* Styling the social media icons */
-.header-main .sm-links img {
-    height: 100%;
-}
-
 /* RESPONSIVE STYLING FOR MOBILE */
 
 @media only screen and (max-width: 600px) {
@@ -381,21 +359,5 @@ ul li:hover>ul {
     .header-main form button img {
         height: 5vh;
         padding-top: 15%;
-    }
-
-    /* Mobile styling of the social media icons container */
-    .header-main .sm-links {
-        height: 50%;
-        width: 100%;
-        margin: 0;
-        padding: 0;
-        justify-content: center;
-    }
-
-    /* Mobile styling of the social media icons */
-    .header-main .sm-links a {
-        height: 60%;
-        margin: 0 2%;
-        padding: 0;
     }
 }
