@@ -8,46 +8,6 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <style>
-        body {
-            font-family: Clarkson;
-            margin: 0;
-            padding: 0;
-            color: white;
-            background-color: #313030;
-        }
-        .navbar {
-            background-color: #E8CFB0;
-            overflow: hidden;
-        }
-        .navbar a {
-            float: left;
-            display: block;
-            color: black;
-            text-align: center;
-            padding: 14px 20px;
-            text-decoration: none;
-        }
-        .navbar a:hover {
-            background-color: #ddd;
-            color: black;
-        }
-        .header {
-            padding: 60px;
-            text-align: center;
-            background: #E8CFB0;
-            color: white;
-        }
-        .header img {
-            max-width: 150px;
-            margin-bottom: 20px;
-        }
-        .header h1 {
-            font-size: 50px;
-        }
-        .content {
-            padding: 20px;
-            text-align: center;
-        }
         .footer {
             background-color: #E8CFB0;
             color: black;
@@ -57,15 +17,35 @@
     </style>
 </head>
 <body>
-    <div class="navbar">
-        <a href="index.html">Home</a>
-        <a href="policies.html">Policies</a>
-        <a href="aboutus.html">About Us</a>
-        <a href="ourmission.html">Our Mission</a>
-        <a href="boardofdirectors.html">Board of Directors</a>
-        <a href="partnerships.html">Partnerships</a>
-        <a href="headquarters.html">Headquarters</a>
+    <div class="mobile-menu-btn">
+        <img src="img/menu.png" alt="mobile-menu-btn">
     </div>
+
+    <header class="header-main">
+        <nav>
+            <a href="index.html" class="logo">
+                <img src="img/SNC.png" alt="Special Needs Community">
+            </a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="policies.html">Policies</a></li>
+                <li><a href="aboutus.html">About Us</a>
+                    <ul>
+                        <li><a href="ourmission.html">Our Mission</a></li>
+                        <li><a href="boardofdirectors.html">Board of Directors</a></li>
+                        <li><a href="headquarters.html">Headquarters</a></li>
+                    </ul>
+                </li>
+                <li><a href="partnerships.html">Partnerships</a></li>
+            </ul>
+        </nav>
+        <div class="sm">
+            <form action="" method="post">
+                <input type="text" name="Search " placeholder="Search...">
+                <button type="submit"><img src="img/searchsymbol.png" alt="search button"></button>
+            </form>
+        </div>
+    </header>
 
     <div class="content">
         <h2>Help with Special Needs Community</h2>
@@ -86,6 +66,9 @@
         <p>Email: specialneedscommunity1@gmail.com</p>
     </div>
 </body>
+
+<script src="js/mobile-nav.js"></script>
+
 </html>
 
 <script src="https://specialneedscommunity.statuspage.io/embed/script.js"></script>
