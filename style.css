@@ -81,8 +81,6 @@ body {
     color: #fff;
 }
 
-/* DROP DOWN STARTED */
-
 .header-main ul li {
     position: relative;
     transition-duration: 100ms;
@@ -107,8 +105,6 @@ ul li:hover>ul {
     display: block;
 }
 
-/* DROP DOWN ENDED */
-
 .header-main .sm {
     align-self: center;
     display: flex;
@@ -118,7 +114,7 @@ ul li:hover>ul {
     height: 40px;
     padding-right: 5px;
     display: flex;
-    border: 1px solid #aeaeae;
+    border: 1px solid #E8CFB0;
     border-radius: 20px 100px 100px 20px;
     width: fit-content;
     align-self: center;
@@ -148,7 +144,9 @@ ul li:hover>ul {
     cursor: pointer;
 }
 
+
 @media only screen and (max-width: 600px) {
+
     .header-main {
         display: none;
     }
@@ -162,7 +160,7 @@ ul li:hover>ul {
         top: 0;
         right: 0;
         z-index: 200;
-        background-color: #E8CFB0;
+        background-color: #fff;
     }
 
     .mobile-menu-btn img {
@@ -241,7 +239,6 @@ ul li:hover>ul {
         color: #111;
     }
 
-
     .header-main nav {
         overflow-y: scroll;
         overflow-x: hidden;
@@ -310,3 +307,4 @@ ul li:hover>ul {
         height: 5vh;
         padding-top: 15%;
     }
+}
