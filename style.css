@@ -21,7 +21,8 @@
 body {
     background-color: #313030;
     margin: 0;
-    padding: 0 60px;
+    padding: 0;
+    padding-top: 60px;
 }
 
 /* Hide burger menu on desktop */
