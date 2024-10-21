@@ -23,6 +23,7 @@ body {
     margin: 0;
     padding: 0;
     padding-top: 60px;
+    box-sizing: border-box;
 }
 
 /* Hide burger menu on desktop */
@@ -40,7 +41,7 @@ body {
     justify-content: space-between;
     position: fixed;
     top: 0;
-    z-index: 9999;
+    z-index: 100;
 }
 
 /* Setting the nav as flex */
