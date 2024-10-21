@@ -20,8 +20,7 @@
 
 body {
     background-color: #313030;
-    min-height: 5000px;
-    padding-top: 60px;
+    padding: 60px;
 }
 
 /* Hide burger menu on desktop */
