@@ -18,6 +18,11 @@
     --menu-count: 4;
 }
 
+body {
+    background-color: #313030;
+    padding-top: 60px;
+}
+
 /* Hide burger menu on desktop */
 .mobile-menu-btn {
     display: none;
