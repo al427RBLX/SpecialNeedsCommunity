@@ -19,11 +19,7 @@
 }
 
 body {
-    background-color: #313030;
-    margin: 0;
-    padding: 0;
-    min-height: 60px;
-    padding-top: 60px;
+    background-color: #313030;                  
 }
 
 /* Hide burger menu on desktop */
