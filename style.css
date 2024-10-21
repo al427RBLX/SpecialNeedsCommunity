@@ -20,7 +20,7 @@
 
 body {
     background-color: #313030;
-    min-height: auto;
+    min-height: fit-content;
     padding-top: 60px;
 }
 
