@@ -1,11 +1,11 @@
 @font-face {
     font-family: RobotoRegular;
-    src: url(fonts/Roboto-Regular.ttf);
+    src: url(fonts/Roboto-Regular.tff);
 }
 
 @font-face {
     font-family: RobotoMedium;
-    src: url(fonts/Roboto-Medium.ttf);
+    src: url(fonts/Roboto-Medium.tff);
 }
 
 nav {
@@ -53,18 +53,18 @@ nav {
 }
 
 .nav-links a:hover {
-    background-color: #39ffde;
+    background-color: white;
 }
 
 .nav-links .nav-cta-button {
     padding: 10px 18px;
     margin-left: 16px;
-    border: #39ffde solid 2px;
+    border: white solid 2px;
     border-radius: 50px;
 }
 
 .nav-links .nav-cta-button:hover {
-    background-color: #39ffde;
+    background-color: white;
 }
 
 .hamburger {
@@ -113,7 +113,7 @@ nav {
     }
 
     .nav-links a:hover {
-        background-color: #39ffde;
+        background-color: white;
     }
 
     .nav-links .nav-cta-button {
@@ -125,6 +125,6 @@ nav {
     }
 
     .nav-links .nav-cta-button:hover {
-        background-color: #39ffde;
+        background-color: white;
     }
 }
