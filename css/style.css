@@ -1,11 +1,11 @@
 @font-face {
     font-family: RobotoRegular;
-    src: url(fonts/Roboto-Regular.tff);
+    src: url(fonts/Roboto-Regular);
 }
 
 @font-face {
     font-family: RobotoMedium;
-    src: url(fonts/Roboto-Medium.tff);
+    src: url(fonts/Roboto-Medium);
 }
 
 nav {
