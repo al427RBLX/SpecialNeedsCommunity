@@ -84,7 +84,17 @@
 
 <script src="js/mobile-nav.js"></script>
 
-<script src="https://cdn.jsdelivr.net/gh/nextapps-de/flexsearch@0.7.41/dist/flexsearch.bundle.min.js"></script>
+<script src="node_modules/flexsearch/dist/flexsearch.bundle.min.js"></script>
+<script>
+
+    // FlexSearch is available on window.FlexSearch
+    // Access FlexSearch static methods via bundled export (static class methods of FlexSearch)
+
+    const index = FlexSearch.Index(options);
+    const document = FlexSearch.Document(options);
+    const worker = FlexSearch.Worker(options);
+
+</script>
 
 </html>
 
