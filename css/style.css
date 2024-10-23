@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
 @font-face {
     font-family: Roboto;
     src: url(fonts/Roboto-Regular.ttf);
@@ -16,6 +22,11 @@
 /* Get the number of menu items, for the mobile menu */
 :root {
     --menu-count: 4;
+}
+
+body {
+    background-color: #313030;
+    line-height: 1.5;
 }
 
 /* Hide burger menu on desktop */
