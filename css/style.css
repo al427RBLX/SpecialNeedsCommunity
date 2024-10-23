@@ -1,7 +1,7 @@
 .reset-text {
     margin: 0;
     padding: 0;
-    font-family: inherit;  /* Resets to inherit from parent */
+    font-family: Clarkson;  /* Resets to inherit from parent */
     font-size: inherit;    /* Resets font size to inherit */
     color: inherit;        /* Resets text color to inherit */
     line-height: normal;   /* Resets line height */
