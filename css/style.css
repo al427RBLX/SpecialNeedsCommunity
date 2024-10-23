@@ -27,6 +27,7 @@
 body {
     background-color: #313030;
     line-height: 1.5;
+    height: 100%;
 }
 
 /* Hide burger menu on desktop */
