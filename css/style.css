@@ -24,7 +24,7 @@
     --menu-count: 4;
 }
 
-body {
+html, body {
     background-color: #313030;
     line-height: 1.5;
     height: 100%;
