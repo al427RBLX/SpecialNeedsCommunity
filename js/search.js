@@ -1,1 +1,0 @@
-var FlexSearch = require("./node_modules/flexsearch/dist/flexsearch.bundle.min.js");
