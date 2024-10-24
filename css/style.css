@@ -4,21 +4,6 @@
     --site-color-01-hover: black;
 }
 
-body {
-  background-color: #313030;
-  margin: 0;
-  padding: 0;
-  color: white;
-}
-
-body:after {
-    position: absolute;
-    width: 0;
-    height: 0;
-    overflow: hidden;
-    z-index: -1;
-}
-
 .wrapper-main {
     width: 1100px;
     margin: 0 auto;
