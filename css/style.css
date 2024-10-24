@@ -58,8 +58,8 @@ a {
 /* MAIN FOOTER CSS STARTED HERE */
 
 :root {
-    --site-color-01: white;
-    --site-color-01-hover: white;
+    --site-color-01: #313030;
+    --site-color-01-hover: #313030;
 }
 
 body:after {
