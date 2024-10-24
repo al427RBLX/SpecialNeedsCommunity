@@ -147,7 +147,7 @@ ul li:hover>ul {
 
 /* Styling the form input when focused (clicked) */
 .header-main form input:focus {
-    border: 1px solid #111;
+    border: 1px solid #E8CFB0;
 }
 
 /* Styling the form button */
