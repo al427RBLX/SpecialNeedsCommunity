@@ -19,11 +19,6 @@
     --menu-count: 4;
 }
 
-/* Website background placeholder */
-body {
-    background-color: #313030;
-}
-
 /* Hide burger menu on desktop */
 .mobile-menu-btn {
     display: none;
