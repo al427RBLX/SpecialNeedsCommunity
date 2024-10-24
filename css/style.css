@@ -202,11 +202,6 @@ a {
     --menu-count: 4;
 }
 
-body {
-    background-color: #313030;
-    color: white;
-}
-
 /* Hide burger menu on desktop */
 .mobile-menu-btn {
     display: none;
