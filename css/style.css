@@ -1,3 +1,88 @@
+/* MAIN FOOTER CSS STARTED HERE */
+
+.footer-main {
+    width: 100%;
+    padding: 60px 0 100px;
+    background-color: #E8CFB0;
+}
+
+.footer-main-flex {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer-testemoni {
+    flex-basis: 20%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer-testemoni img {
+    width: 50%;
+    border-radius: 100px;
+}
+
+.footer-testemoni p {
+    text-align: center;
+    font-size: 16px;
+    padding: 20px 20px 0;
+}
+
+.footer-getintouch {
+    padding: 10px 20px;
+    margin: 40px 0 60px;
+    border: 2px solid #fff;
+    font-weight: 600;
+    transition: all ease-in-out 200ms;
+}
+
+.footer-getintouch:hover {
+    border: 2px solid var(--site-color-01);
+}
+
+.footer-sitemap {
+    flex-basis: 100%;
+    display: flex;
+}
+
+.footer-sitemap a {
+    line-height: 30px;
+}
+
+.footer-sitemap a:hover {
+    opacity: 0.8;
+}
+
+.footer-sitemap ul:nth-child(1) {
+    border-left: 4px solid var(--site-color-01);
+    padding-left: 20px;
+}
+
+.footer-sitemap ul:nth-child(1),
+.footer-sitemap ul:nth-child(2) {
+    flex-basis: 180px;
+}
+
+.footer-sitemap ul:nth-child(3) {
+    flex-basis: 340px;
+}
+
+.footer-sitemap p {
+    text-transform: uppercase;
+}
+
+.footer-sitemap ul:nth-child(4) {
+    flex-grow: 1;
+}
+
+.footer-sitemap ul:nth-child(4) p {
+    text-align: right;
+}
+
+/* MAIN WEBSITE CSS STARTED HERE */
+
 @font-face {
     font-family: Roboto;
     src: url(fonts/Roboto-Regular.ttf);
