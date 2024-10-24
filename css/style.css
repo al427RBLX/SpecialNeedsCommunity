@@ -1,6 +1,4 @@
 /* MAIN WEBSITE FOOTER CSS STARTED HERE */
-
-
 .footer-main {
     width: 100%;
     padding: 60px 0 100px;
@@ -73,11 +71,6 @@
 /* Get the number of menu items, for the mobile menu */
 :root {
     --menu-count: 4;
-}
-
-/* Website background placeholder */
-body {
-    background-color: #313030;
 }
 
 /* Hide burger menu on desktop */
