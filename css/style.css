@@ -55,8 +55,6 @@
 }
 
 /* MAIN WEBSITE CSS STARTED HERE */
-=======
->>>>>>> f81de171c8d8bc413ee67b25b6fb784aa8d014ad
 @font-face {
     font-family: Roboto;
     src: url(fonts/Roboto-Regular.ttf);
@@ -75,6 +73,11 @@
 /* Get the number of menu items, for the mobile menu */
 :root {
     --menu-count: 4;
+}
+
+/* Website background placeholder */
+body {
+    background-color: #313030;
 }
 
 /* Hide burger menu on desktop */
@@ -133,7 +136,7 @@
     font-size: 1rem;
     font-family: RobotoMedium;
     color: #000000;
-    background-color: #fff;
+    background-color: #E8CFB0;
     text-transform: uppercase;
     cursor: pointer;
     transition: all ease-in-out 100ms;
@@ -220,28 +223,6 @@ ul li:hover>ul {
     height: 24px;
     padding-top: 15%;
     cursor: pointer;
-}
-
-/* Styling and applying flex to the social media links container */
-.header-main .sm-links {
-    height: 60px;
-    width: fit-content;
-    display: flex;
-    align-items: center;
-}
-
-/* Styling the social media links */
-.header-main .sm-links a {
-    display: block;
-    height: 30px;
-    margin-left: 10px;
-    cursor: pointer;
-    align-self: center;
-}
-
-/* Styling the social media icons */
-.header-main .sm-links img {
-    height: 100%;
 }
 
 /* RESPONSIVE STYLING FOR MOBILE */
@@ -430,29 +411,10 @@ ul li:hover>ul {
     .header-main form button {
         padding: 0 5%;
     }
-<<<<<<< HEAD
 
     /* Mobile styling of the form button image */
     .header-main form button img {
         height: 5vh;
         padding-top: 15%;
     }
-
-    /* Mobile styling of the social media icons container */
-    .header-main .sm-links {
-        height: 50%;
-        width: 100%;
-        margin: 0;
-        padding: 0;
-        justify-content: center;
-    }
-
-    /* Mobile styling of the social media icons */
-    .header-main .sm-links a {
-        height: 60%;
-        margin: 0 2%;
-        padding: 0;
-    }
-=======
->>>>>>> f81de171c8d8bc413ee67b25b6fb784aa8d014ad
 }
