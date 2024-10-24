@@ -1,4 +1,10 @@
 /* MAIN WEBSITE FOOTER CSS STARTED HERE */
+:root {
+    --site-color-01: black;
+    --site-color-01-hover: black;
+}
+
+
 .footer-main {
     width: 100%;
     padding: 60px 0 100px;
@@ -8,7 +14,6 @@
 }
 
 .footer-main-flex {
-    color: black;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
