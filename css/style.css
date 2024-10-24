@@ -5,6 +5,7 @@
 
 body {
     background-color: #313030;
+    color: white;
 }
 
 body:after {
@@ -199,6 +200,11 @@ a {
 /* Get the number of menu items, for the mobile menu */
 :root {
     --menu-count: 4;
+}
+
+body {
+    background-color: #313030;
+    color: white;
 }
 
 /* Hide burger menu on desktop */
