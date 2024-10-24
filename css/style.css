@@ -15,7 +15,6 @@ body:after {
     height: 0;
     overflow: hidden;
     z-index: -1;
-    content: url(../img/facebook-color.png) url(../img/instagram-color.png);
 }
 
 .wrapper-main {
@@ -60,7 +59,7 @@ p {
 a {
     font-size: 14px;
     line-height: 18px;
-    color: #black;
+    color: black;
     font-family: Clarkson;
     cursor: pointer;
 }
@@ -68,6 +67,7 @@ a {
 .header-main {
     position: fixed;
     top: 0;
+    bottom: 0;
     width: 100%;
     height: 60px;
     background-color: #E8CFB0;
@@ -113,7 +113,7 @@ a {
 }
 
 .header-main-nav ul li a:hover {
-    color: #white;
+    color: white;
 }
 
 .header-main-sm {
@@ -137,36 +137,6 @@ a {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-}
-
-.footer-testemoni {
-    flex-basis: 20%;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.footer-testemoni img {
-    width: 50%;
-    border-radius: 100px;
-}
-
-.footer-testemoni p {
-    text-align: center;
-    font-size: 16px;
-    padding: 20px 20px 0;
-}
-
-.footer-getintouch {
-    padding: 10px 20px;
-    margin: 40px 0 60px;
-    border: 2px solid #fff;
-    font-weight: 600;
-    transition: all ease-in-out 200ms;
-}
-
-.footer-getintouch:hover {
-    border: 2px solid var(--site-color-01);
 }
 
 .footer-sitemap {
