@@ -3,11 +3,6 @@
     --site-color-01-hover: white;
 }
 
-body {
-    background-color: #313030;
-    color: white;
-}
-
 body:after {
     position: absolute;
     width: 0;
