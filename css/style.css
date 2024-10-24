@@ -74,7 +74,7 @@
     font-size: 1rem;
     font-family: RobotoMedium;
     color: #000000;
-    background-color: #fff;
+    background-color: #E8CFB0;
     text-transform: uppercase;
     cursor: pointer;
     transition: all ease-in-out 100ms;
@@ -348,27 +348,5 @@ ul li:hover>ul {
     /* Mobile styling of the form button */
     .header-main form button {
         padding: 0 5%;
-    }
-
-    /* Mobile styling of the form button image */
-    .header-main form button img {
-        height: 5vh;
-        padding-top: 15%;
-    }
-
-    /* Mobile styling of the social media icons container */
-    .header-main .sm-links {
-        height: 50%;
-        width: 100%;
-        margin: 0;
-        padding: 0;
-        justify-content: center;
-    }
-
-    /* Mobile styling of the social media icons */
-    .header-main .sm-links a {
-        height: 60%;
-        margin: 0 2%;
-        padding: 0;
     }
 }
