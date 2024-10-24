@@ -1,8 +1,8 @@
 /* MAIN FOOTER CSS STARTED HERE */
 
 :root {
-    --site-color-01: black;
-    --site-color-01-hover: black;
+    --site-color-01: white;
+    --site-color-01-hover: white;
 }
 
 body {
@@ -112,7 +112,7 @@ a {
 }
 
 .header-main-nav ul li a:hover {
-    color: black;
+    color: white;
 }
 
 .header-main-sm {
