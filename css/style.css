@@ -15,6 +15,7 @@ body:after {
     height: 0;
     overflow: hidden;
     z-index: -1;
+    content: url(../img/facebook-color.png) url(../img/instagram-color.png);
 }
 
 .wrapper-main {
@@ -25,8 +26,8 @@ body:after {
 h1 {
     font-size: 26px;
     line-height: 32px;
-    color: #fff;
-    font-family: Roboto;
+    color: black;
+    font-family: Clarkson;
     font-weight: 600;
     text-transform: uppercase;
 }
@@ -34,8 +35,8 @@ h1 {
 h2 {
     font-size: 28px;
     line-height: 32px;
-    color: #fff;
-    font-family: Roboto;
+    color: black;
+    font-family: Clarkson;
     font-weight: 600;
     text-transform: uppercase;
 }
@@ -43,8 +44,8 @@ h2 {
 h3 {
     font-size: 26px;
     line-height: 32px;
-    color: #fff;
-    font-family: Roboto;
+    color: black;
+    font-family: Clarkson;
     font-weight: 600;
     text-transform: uppercase;
 }
@@ -52,15 +53,15 @@ h3 {
 p {
     font-size: 14px;
     line-height: 30px;
-    color: #fff;
-    font-family: Roboto;
+    color: black;
+    font-family: Clarkson;
 }
 
 a {
     font-size: 14px;
     line-height: 18px;
-    color: #fff;
-    font-family: Roboto;
+    color: #black;
+    font-family: Clarkson;
     cursor: pointer;
 }
 
@@ -69,7 +70,7 @@ a {
     top: 0;
     width: 100%;
     height: 60px;
-    background-color: #fff;
+    background-color: #E8CFB0;
     display: flex;
     justify-content: space-between;
     z-index: 1000;
@@ -104,7 +105,7 @@ a {
 
 .header-main-nav ul li a {
     padding: 0 10px;
-    font-family: "Roboto", cursive;
+    font-family: Clarkson;
     line-height: 60px;
     color: #000;
     display: block;
@@ -112,7 +113,7 @@ a {
 }
 
 .header-main-nav ul li a:hover {
-    color: white;
+    color: #white;
 }
 
 .header-main-sm {
@@ -122,30 +123,6 @@ a {
     display: flex;
     align-items: center;
     column-gap: 10px;
-}
-
-.header-main-sm-fb {
-    width: 20px;
-    height: 20px;
-    background-image: url(../img/facebook.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.header-main-sm-fb:hover {
-    background-image: url(../img/facebook-color.png);
-}
-
-.header-main-sm-in {
-    width: 20px;
-    height: 20px;
-    background-image: url(../img/instagram.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.header-main-sm-in:hover {
-    background-image: url(../img/instagram-color.png);
 }
 
 /* FOOTER */
