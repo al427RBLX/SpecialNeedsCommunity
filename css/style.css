@@ -19,6 +19,12 @@
     --menu-count: 4;
 }
 
+body {
+    background-color: #;
+    display: block;
+    margin: 8px;
+}
+
 /* Hide burger menu on desktop */
 .mobile-menu-btn {
     display: none;
