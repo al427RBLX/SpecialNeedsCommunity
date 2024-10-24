@@ -62,14 +62,6 @@ a {
     --site-color-01-hover: #313030;
 }
 
-body:after {
-    position: absolute;
-    width: 0;
-    height: 0;
-    overflow: hidden;
-    z-index: -1;
-}
-
 .wrapper-main {
     width: 1100px;
     margin: 0 auto;
