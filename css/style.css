@@ -1,186 +1,4 @@
-/* MAIN FOOTER STARTED HERE */
-
-:root {
-    --site-color-01: white;
-    --site-color-01-hover: white;
-}
-
-body {
-    background-color: #313030;
-}
-
-body:after {
-    position: absolute;
-    width: 0;
-    height: 0;
-    overflow: hidden;
-    z-index: -1;
-}
-
-
-.wrapper-main {
-    width: 1100px;
-    margin: 0 auto;
-}
-
-h1 {
-    font-size: 26px;
-    line-height: 32px;
-    color: black;
-    font-family: Clarkson;
-    font-weight: 600;
-    text-transform: uppercase;
-}
-
-h2 {
-    font-size: 28px;
-    line-height: 32px;
-    color: black;
-    font-family: Clarkson;
-    font-weight: 600;
-    text-transform: uppercase;
-}
-
-h3 {
-    font-size: 26px;
-    line-height: 32px;
-    color: black;
-    font-family: RobClarksonoto;
-    font-weight: 600;
-    text-transform: uppercase;
-}
-
-p {
-    font-size: 14px;
-    line-height: 30px;
-    color: black;
-    font-family: Clarkson;
-}
-
-a {
-    font-size: 14px;
-    line-height: 18px;
-    color: black;
-    font-family: Clarkson;
-    cursor: pointer;
-}
-
-.header-main {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 60px;
-    background-color: #E8CFB0;
-    display: flex;
-    justify-content: space-between;
-    z-index: 1000;
-}
-
-.header-main-logo {
-    width: fit-content;
-    height: 100%;
-    padding-left: 60px;
-    display: flex;
-}
-
-.header-main-logo img {
-    height: 40px;
-    align-self: center;
-}
-
-.header-main-nav {
-    width: fit-content;
-    height: 100%;
-}
-
-.header-main-nav ul {
-    list-style: none;
-    margin-left: 30px;
-}
-
-.header-main-nav ul li {
-    display: inline;
-    float: left;
-}
-
-.header-main-nav ul li a {
-    padding: 0 10px;
-    font-family: Clarkson;
-    line-height: 60px;
-    color: #000;
-    display: block;
-    height: 100%;
-}
-
-.header-main-nav ul li a:hover {
-    color: white;
-}
-
-.header-main-sm {
-    width: fit-content;
-    height: 100%;
-    padding-right: 60px;
-    display: flex;
-    align-items: center;
-    column-gap: 10px;
-}
-
-/* FOOTER */
-
-.footer-main {
-    width: 100%;
-    padding: 60px 0 100px;
-    background-color: #E8CFB0;
-    position: fixed;
-    bottom: 0;
-}
-
-.footer-main-flex {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.footer-sitemap {
-    flex-basis: 100%;
-    display: flex;
-}
-
-.footer-sitemap a {
-    line-height: 30px;
-}
-
-.footer-sitemap a:hover {
-    opacity: 0.8;
-}
-
-.footer-sitemap ul:nth-child(1) {
-    border-left: 4px solid var(--site-color-01);
-    padding-left: 20px;
-}
-
-.footer-sitemap ul:nth-child(1),
-.footer-sitemap ul:nth-child(2) {
-    flex-basis: 180px;
-}
-
-.footer-sitemap ul:nth-child(3) {
-    flex-basis: 340px;
-}
-
-.footer-sitemap p {
-    text-transform: uppercase;
-}
-
-.footer-sitemap ul:nth-child(4) {
-    flex-grow: 1;
-}
-
-.footer-sitemap ul:nth-child(4) p {
-    text-align: right;
-}
-
-/* MAIN WEBSITE CSS STARTED HERE */
+/* MAIN WEBSITE/MOBLIE CSS STARTED HERE */
 @font-face {
     font-family: Roboto;
     src: url(fonts/Roboto-Regular.ttf);
@@ -199,6 +17,11 @@ a {
 /* Get the number of menu items, for the mobile menu */
 :root {
     --menu-count: 4;
+}
+
+/* Website background placeholder */
+body {
+    background-color: #313030;
 }
 
 /* Hide burger menu on desktop */
@@ -257,7 +80,7 @@ a {
     font-size: 1rem;
     font-family: RobotoMedium;
     color: #000000;
-    background-color: #E8CFB0;
+    background-color: #fff;
     text-transform: uppercase;
     cursor: pointer;
     transition: all ease-in-out 100ms;
@@ -312,7 +135,7 @@ ul li:hover>ul {
     height: 40px;
     padding-right: 5px;
     display: flex;
-    border: 1px solid #E8CFB0;
+    border: 1px solid #aeaeae;
     border-radius: 20px 100px 100px 20px;
     width: fit-content;
     align-self: center;
@@ -537,5 +360,21 @@ ul li:hover>ul {
     .header-main form button img {
         height: 5vh;
         padding-top: 15%;
+    }
+
+    /* Mobile styling of the social media icons container */
+    .header-main .sm-links {
+        height: 50%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        justify-content: center;
+    }
+
+    /* Mobile styling of the social media icons */
+    .header-main .sm-links a {
+        height: 60%;
+        margin: 0 2%;
+        padding: 0;
     }
 }
